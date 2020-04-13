@@ -21,3 +21,20 @@
 // Import partials
 @import "nav";
 @import "jumbotron";
+
+
+
+
+  h1 {
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    padding: 20px;
+  }
+
+  #content {
+    p {
+      text-align: center;
+      padding-bottom: 20px;
+      font-size: large;
+    }
+}

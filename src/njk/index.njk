@@ -5,14 +5,26 @@
 {% block page_description %} A daily blog from Capt. Crit McGillicutty.{% endblock %}
 
 {% block content %}
-<div class="container">
+
+ <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+    <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-md-10 offset-md-3row justify-content-center">
       <h1>Ahoy mateys!</h1>
+      <div id= "content">
       <p> Ahoy scallawags! This here blog will show ye the sordid tales of Captain Crit McGillicutty. Read well, for Captain McGillicutty is the most feared pirate in the Seven Seas! </p>
-      <p> May ye find all the treasure ye seek </p>
+      <p> May ye find all the treasure ye seek, </p>
       <p> -First Mate Aifread </p>
-      <div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+</div>
+<div class= "data entries">
      {% for entry in data.entries %}
   <h3 class="entry-headline"><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
   <p class="entry-date">{{ entry.date }}</p>
